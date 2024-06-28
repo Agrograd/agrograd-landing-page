@@ -8,6 +8,10 @@ export const loginWithGoogle = async (setUser) => {
       const {displayName,email,photoURL,uid} = data.user
       addUser({displayName,email,photoURL,uid});
       setUser({displayName,email,photoURL,uid})
+      setTimeout(() => {
+        window.location.href = "https://chat.whatsapp.com/Lcc5yEFSAcRAQjcMtwcU5X";
+      }, 5000);
+     
     })
     .catch((err) => {
       console.log(err);

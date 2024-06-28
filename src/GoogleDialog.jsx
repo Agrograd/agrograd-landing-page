@@ -1,14 +1,13 @@
-import { Info} from "lucide-react";
+import { Info } from "lucide-react";
 import { loginWithGoogle } from "./firebase/functions";
 import { useState } from "react";
 import DoneGIF from "./assets/nice.gif";
 export default function GoogleDialog({ dialogState }) {
   const [loginedUser, setLoginedUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
   const googleLogin = async () => {
+    setIsLoading(true);
     loginWithGoogle(setLoginedUser);
-    setTimeout(() => {
-      window.location.href = "https://chat.whatsapp.com/Lcc5yEFSAcRAQjcMtwcU5X";
-    }, 5000);
   };
   return (
     <div
@@ -16,7 +15,7 @@ export default function GoogleDialog({ dialogState }) {
       onClick={(e) => dialogState(false)}
     >
       <div
-        className="relative w-[80%] lg:w-[40%] 2xl:w-[600px] bg-white rounded-xl border-[1px] border-green-500 flex justify-center items-center h-[300px]"
+        className="min-w-[400px] w-[80%] lg:w-[40%] 2xl:w-[600px] bg-white rounded-xl border-[1px] border-green-500 flex flex-col justify-center items-center min-h-[300px]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="h-[70%] border-y-[0.5px] border-gray-400 w-full flex flex-col justify-center items-center space-y-3">
@@ -56,6 +55,9 @@ export default function GoogleDialog({ dialogState }) {
             </>
           )}
         </div>
+        {isLoading && (
+          <div className="animate-spin w-5 h-5 border-t-2 border-b-2 border-green-500 rounded-full" />
+        )}
       </div>
     </div>
   );
