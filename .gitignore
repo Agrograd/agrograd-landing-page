@@ -7,7 +7,7 @@ logs
 bower_components
 
 *.sublime*
-
+dist
 psd
 thumb
 sketch
