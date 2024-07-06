@@ -3,11 +3,12 @@ import GoogleDialog from "./GoogleDialog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BlogPost from "./components/BlogPost";
 import BlogSection from "./components/BlogSection";
+import EventPage from "./components/EventPage";
 
 
 const App = () => {
   const [showDilaog, setShowDilaog] = useState(false);
-  const handleClick = () => {
+   const handleClick = () => {
     setShowDilaog(true)
   };
 
@@ -37,7 +38,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <main className=" w-screen xl:w-full text-center xl:mx-auto pt-2 xl:py-2">
-              <h1 className=" text-4xl xl:text-5xl md:text-6xl font-bold text-green-500 mb-3 xl:mb-4 ">
+              <h1 className=" text-4xl xl:text-6xl md:text-6xl font-bold text-green-500 mb-3 xl:mb-4 ">
                 Welcome to agrowgrad
               </h1>
               <p className=" w-10/12 font-medium text-lg lg:text-2xl md:text-2xl  xl:text-lg xl:mb-4 mb-2 mx-auto xl:w-7/12 ">
@@ -102,6 +103,7 @@ const App = () => {
                 Farming needs you my friend. Yes, you!
               </h2>
               <BlogSection />
+              <EventPage joinButton={handleClick} />
             </main>
           } />
           <Route path="/blog/:id" element={<BlogPost />} />

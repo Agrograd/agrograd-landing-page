@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { blogPosts } from "./BlogSection";
 import SocialIcons from "./SocialIcons";
+import ShareButton from "./ShareButton";
 
 const BlogPost = () => {
     const { id } = useParams();
@@ -14,9 +15,11 @@ const BlogPost = () => {
             <div className="container mx-auto px-4">
                 <h1 className="text-4xl font-bold text-green-800 mb-4">{post.title}</h1>
                 <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
+                <ShareButton/>
                 <Link to="/" className="mt-4 text-xl w-full inline-block text-green-600 hover:text-green-800 font-medium">
-                    Back to Blog
+                    Back to Blog 
                 </Link>
+            
             </div>
             <SocialIcons />
         </div>

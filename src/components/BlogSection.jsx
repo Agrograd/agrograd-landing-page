@@ -234,6 +234,7 @@ export const blogPosts = [
 
 
 const BlogCard = ({ post }) => (
+  <Link to={`/blog/${post.id}`}  >
     <div className="bg-green-50 hover:bg-emerald-100 cursor-pointer p-2 h-96 my-auto mx-auto rounded-lg shadow-md overflow-hidden">
         <img src={post.image} alt={post.title} className="w-full rounded-lg h-72 object-cover" />
         <div className="p-1">
@@ -243,12 +244,13 @@ const BlogCard = ({ post }) => (
             </Link>
         </div>
     </div>
+  </Link>
 );
 
 const BlogSection = () => (
-    <section className="py-2 h-screen  bg-green-">
+    <section className="py-2 h-auto  bg-green-">
         <div className="container px-4">
-            <h2 className="text-4xl font-bold text-green-500 mt-4 mb-4">Blogs</h2>
+            <h2 className="text-5xl font-bold text-green-500 mt-4 mb-4">Blogs</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {blogPosts.map((post) => (
                     <BlogCard key={post.id} post={post} />
