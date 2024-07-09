@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 // Blog Posts Details 
 export const blogPosts = [
+
+  // First blog 
     {
         id: 1,
         title: "AgrowGrad: Revolutionizing Agricultural Education in India",
@@ -68,6 +70,7 @@ export const blogPosts = [
         `
     },
 
+    // Second Blog 
     {
         id: 2,
         title: "Step by Step Guide on How to Start Farming.",
@@ -228,6 +231,103 @@ export const blogPosts = [
         <p className="mt-8 mb-4">Thank you for taking the time to read our beginner's guide to starting a farm. We hope you found the step-by-step instructions helpful and inspiring. Farming can be a rewarding and fulfilling endeavor, offering a unique connection to the land and a sense of accomplishment. Remember, every successful farm started with a single step, so don't be afraid to get your hands dirty and learn as you go. If you have any questions or need further advice, feel free to reach out to us on whatsapp community. Happy farming!</p>
       </div>
     </div>
+    `
+  },
+    
+  // Third Blog 
+  {
+    id: 3,
+    title: "Herb Gardening for Beginners: Easy Herbs to Grow at Home",
+    image: "https://images.pexels.com/photos/4505166/pexels-photo-4505166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    content: `
+    <article className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-3xl md:text-4xl font-bold mb-6">Starting a Herb Garden at Home</h1>
+
+      <p className="mb-6">
+        Starting a herb garden at home can be a rewarding and practical way to enjoy fresh, flavorful additions to your meals while beautifying your space. Whether you have a spacious backyard or just a small windowsill, growing herbs is accessible to everyone. This guide will introduce you to some of the easiest herbs to cultivate, providing you with tips and insights to kickstart your journey into herb gardening. Discover the joy of nurturing your own mini garden and savor the benefits of homegrown, aromatic herbs right at your fingertips.
+      </p>
+
+      <section className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Getting Started</h2>
+
+        <h3 className="text-xl md:text-2xl font-semibold mb-3">Choosing Your Herbs</h3>
+        <p className="mb-4">As a beginner, it's essential to start with herbs that are easy to grow and maintain. Here are some of the best herbs for novice gardeners:</p>
+        <ul className="list-disc pl-6 mb-4">
+          <li>Basil: Ideal for warm climates and perfect for Italian dishes like pasta and pizza.</li>
+          <li>Mint: Grows quickly and can be used in teas, desserts, and cocktails.</li>
+          <li>Parsley: Versatile and can be added to a variety of dishes, from soups to salads.</li>
+          <li>Chives: Adds a mild onion flavor to dishes and is great for garnishing.</li>
+          <li>Thyme: Hardy and perfect for seasoning meats and vegetables.</li>
+          <li>Oregano: A staple in Mediterranean cooking, especially in sauces and marinades.</li>
+        </ul>
+
+        <h3 className="text-xl md:text-2xl font-semibold mb-3">Planting Tips</h3>
+        <ol className="list-decimal pl-6 mb-4">
+          <li><strong>Select the Right Location:</strong> Most herbs need at least 6 hours of sunlight daily. Choose a sunny spot, whether it's a windowsill, balcony, or garden bed.</li>
+          <li><strong>Use Good Quality Soil:</strong> Herbs thrive in well-drained soil. Use a high-quality potting mix if planting in containers.</li>
+          <li><strong>Proper Spacing:</strong> Ensure there's enough space between plants for air circulation. This helps prevent diseases and allows the plants to grow robustly.</li>
+          <li><strong>Watering:</strong> While herbs need consistent moisture, be careful not to overwater. Most herbs prefer the soil to dry out slightly between waterings.</li>
+          <li><strong>Fertilizing:</strong> Herbs generally don't require much fertilization. A light feeding with a balanced, all-purpose fertilizer every few weeks during the growing season is usually sufficient.</li>
+        </ol>
+
+        <h3 className="text-xl md:text-2xl font-semibold mb-3">Planting Methods</h3>
+        <ul className="list-disc pl-6 mb-4">
+          <li><strong>Seeds vs. Seedlings:</strong> Beginners might find it easier to start with seedlings purchased from a nursery. However, growing from seeds can be more economical and satisfying.</li>
+          <li><strong>Containers vs. Ground:</strong> If space is limited, containers are an excellent option. Ensure containers have good drainage to prevent waterlogging.</li>
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Caring for Your Herbs</h2>
+        <ol className="list-decimal pl-6 mb-4">
+          <li><strong>Pruning:</strong> Regular pruning encourages bushier growth and prevents plants from becoming leggy. Pinch off the tips of the plants regularly.</li>
+          <li><strong>Pest Control:</strong> Watch out for pests like aphids and spider mites. Use natural remedies like neem oil or introduce beneficial insects like ladybugs to keep pests in check.</li>
+          <li><strong>Harvesting:</strong> Harvest herbs in the morning after the dew has dried but before the sun is too hot. This is when their essential oils are at their peak. Use sharp scissors to cut the stems cleanly.</li>
+        </ol>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Using Your Herbs in Cooking</h2>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Basil</h3>
+          <p><strong>Uses:</strong> Perfect for pesto, caprese salad, and as a topping for pizza.</p>
+          <p><strong>Tip:</strong> Add basil at the end of cooking to retain its flavor and aroma.</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Mint</h3>
+          <p><strong>Uses:</strong> Great in teas, mojitos, and as a garnish for desserts.</p>
+          <p><strong>Tip:</strong> Mix chopped mint with yogurt for a refreshing dip.</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Parsley</h3>
+          <p><strong>Uses:</strong> Ideal for garnishing, adding to salads, soups, and stews.</p>
+          <p><strong>Tip:</strong> Use both the leaves and stems to maximize flavor.</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Chives</h3>
+          <p><strong>Uses:</strong> Adds a mild onion flavor to baked potatoes, omelets, and salads.</p>
+          <p><strong>Tip:</strong> Snip with scissors for even, delicate pieces.</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Thyme</h3>
+          <p><strong>Uses:</strong> Perfect for seasoning roasted meats, vegetables, and in stews.</p>
+          <p><strong>Tip:</strong> Add thyme early in cooking to allow its flavors to meld with other ingredients.</p>
+        </div>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold mb-2">Oregano</h3>
+          <p><strong>Uses:</strong> Essential for Italian and Greek dishes, especially in tomato-based sauces and marinades.</p>
+          <p><strong>Tip:</strong> Dried oregano is more potent than fresh; use sparingly.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Conclusion</h2>
+        <p>
+          Starting a herb garden is a delightful way to bring fresh flavors into your kitchen while enjoying the therapeutic benefits of gardening. With a bit of care and attention, you can grow a variety of herbs that will enhance your culinary creations and provide a sense of accomplishment. Happy gardening!
+        </p>
+      </section>
+    </article>
+    
     `
     }
 ];

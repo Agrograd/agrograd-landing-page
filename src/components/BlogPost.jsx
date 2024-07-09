@@ -8,7 +8,7 @@ const BlogPost = () => {
     const { id } = useParams();
     const post = blogPosts.find((p) => p.id === parseInt(id));
 
-    if (!post) return <div>Post not found</div>;
+    if (!post) return <div>Post not found</div>; 
 
     return (
         <div className="bg-green-50 min-h-screen rounded-xl py-5">
