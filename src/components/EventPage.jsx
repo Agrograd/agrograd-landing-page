@@ -23,10 +23,10 @@ const EventCard = ({ title, date, description, image }) => (
 const EventPage = () => {
     const events = [
         {
-            title: "Organic Farming & Soil Health Workshop",
-            date: "July 7, 2024 | 8:00 PM IST",
-            description: "Learn the basics of organic farming and soil health.",
-            image: "https://i.ibb.co/f8VbHY3/How-to-3.png"
+            title: "Crop Selection & Planning",
+            date: "July 14, 2024 | 8:00 PM IST",
+            description: "Learn the basics of crop selections.",
+            image: "https://i.ibb.co/KFDsW2c/IMG-20240711-WA0000.jpg"
         },
         // Add more events here
     ];
