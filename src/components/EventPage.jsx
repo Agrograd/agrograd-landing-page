@@ -48,12 +48,13 @@ const EventCard = ({ title, date, description, image }) => (
 const EventPage = () => {
     const events = [
        
-        {
-            title: "Growing plants from seeds",
+        
+    {
+        title: "Growing plants from seeds",
             date: "Sep 14, 2024 | 8:00 PM IST",
-            description: "Learn the everything about growing plants from seeds.",
-            image: "https://i.ibb.co/PGz4wwt/Whats-App-Image-2024-09-06-at-12-58-30-PM.jpg"
-        }
+                description: "Learn the everything about growing plants from seeds.",
+                    image: "https://i.ibb.co/PGz4wwt/Whats-App-Image-2024-09-06-at-12-58-30-PM.jpg"
+    }
 
 
         
