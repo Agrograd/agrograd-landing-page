@@ -48,19 +48,13 @@ const EventCard = ({ title, date, description, image }) => (
 const EventPage = () => {
     const events = [
         {
-            title: "Cactus Farming in a climate changing world",
-            date: "Aug 03, 2024 | 8:00 PM IST",
-            description: "Learn the basics of cactus farming & more .",
-            image: "https://i.ibb.co/bXWHxDG/Whats-App-Image-2024-07-28-at-11-51-33-AM.jpg"
-        },
+            title: "Growing plants from seeds",
+            date: "Sep 14, 2024 | 8:00 PM IST",
+            description: "Learn the everything about growing plants from seeds.",
+            image: "https://i.ibb.co/PGz4wwt/Whats-App-Image-2024-09-06-at-12-58-30-PM.jpg"
+        }
 
-        {
-            title: "Marketing & Selling your produce",
-            date: "Aug 10, 2024 | 8:00 PM IST",
-            description: "Learn to market and sell your produce.",
-            image: "https://i.ibb.co/r0N4P9y/Whats-App-Image-2024-07-28-at-11-55-30-AM.jpg"
-        },
-
+        
         // Add more events here
     ];
 
