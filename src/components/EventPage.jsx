@@ -1,44 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ShareButton from './ShareButton';
 
-const ShimmerEffect = () => (
-    <div className="animate-pulse bg-gray-300 h-full w-full rounded-lg"></div>
-);
-
-const LazyLoadImage = ({ src, alt, className }) => {
-    const [loaded, setLoaded] = useState(false);
-
-    return (
-        <div className={className}>
-            {!loaded && <ShimmerEffect />}
-            <img
-                src={src}
-                alt={alt}
-                className={`transition-opacity duration-500 ease-in-out ${loaded ? "opacity-100" : "opacity-0"
-                    } ${className}`}
-                onLoad={() => setLoaded(true)}
-            />
-        </div>
-    );
-};
 
 const EventCard = ({ title, date, description, image }) => (
+
     <div className="bg-yellow-200 cursor-pointer hover:bg-yellow-100 p-1 w-auto rounded-lg shadow-md overflow-hidden">
-        <LazyLoadImage
-            src={image}
-            alt={title}
-            className="w-full rounded-lg object-fill"
-        />
+        <img src={image} alt={title} className="w-full rounded-lg object-fill" />
         <div className="p-4">
             <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
             <p className="text-sm font-bold text-gray-600 mb-2">{date}</p>
             <p className="text-gray-700 mb-2">{description}</p>
             <div className='flex justify-center'>
-                <a href="https://chat.whatsapp.com/Lcc5yEFSAcRAQjcMtwcU5X">
-                    <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200">
-                        Join Now
-                    </button>
-                </a>
+                <a href="https://chat.whatsapp.com/Lcc5yEFSAcRAQjcMtwcU5X"><button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-200 ">
+                    Join Now
+                </button></a>
                 <ShareButton />
             </div>
         </div>
@@ -48,25 +23,17 @@ const EventCard = ({ title, date, description, image }) => (
 const EventPage = () => {
     const events = [
         {
-            title: "Cactus Farming in a climate changing world",
-            date: "Aug 03, 2024 | 8:00 PM IST",
-            description: "Learn the basics of cactus farming & more .",
-            image: "https://i.ibb.co/bXWHxDG/Whats-App-Image-2024-07-28-at-11-51-33-AM.jpg"
+            title: "Organic Farming & Soil Health Workshop",
+            date: "July 7, 2024 | 8:00 PM IST",
+            description: "Learn the basics of organic farming and soil health.",
+            image: "https://i.ibb.co/f8VbHY3/How-to-3.png"
         },
-
-        {
-            title: "Marketing & Selling your produce",
-            date: "Aug 10, 2024 | 8:00 PM IST",
-            description: "Learn to market and sell your produce.",
-            image: "https://i.ibb.co/r0N4P9y/Whats-App-Image-2024-07-28-at-11-55-30-AM.jpg"
-        },
-
         // Add more events here
     ];
 
     return (
-        <div className="h-screen">
-            <header className="text-green-500 mt-7 px-4">
+        <div className=" h-screen">
+            <header className=" text-green-500 mt-7 px-4">
                 <div className="container mx-auto">
                     <h1 className="text-5xl font-bold mb-1">Upcoming Events</h1>
                     <p className="text-2xl">Join us in our upcoming webinars, workshops, and online events.</p>
@@ -80,6 +47,8 @@ const EventPage = () => {
                     ))}
                 </div>
             </main>
+
+
         </div>
     );
 };
